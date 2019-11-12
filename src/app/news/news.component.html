@@ -1,0 +1,11 @@
+<div *ngFor = "let new of news" class="card">
+    <img src="{{new.image}}"
+         class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{title}}</h5>
+        <p class="card-text">{{new.age}}</p>
+        <p class="card-text">{{new.name}}</p>
+        <button class="btn btn-primary" (click)= "onClickMe($event)">CLICK ME</button>
+        <input type="text" (keyup) = "thaydoi($event)" class="form-control mt-3"/>
+    </div>
+</div>
